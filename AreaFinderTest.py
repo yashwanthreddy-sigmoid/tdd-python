@@ -25,13 +25,13 @@ class AreaFinderTest:
 
     @pytest.mark.parametrize("test_input, expected", [(2, 4), (3, 9), (6, 36), (10,100)])
     def test_eval(self, Area, test_input, expected):
-        assert Area.areaofsquare(test_input) == expected
+        assert Area.find(test_input) == expected
 
 
     def test_exception_with_bad_input(self, Area):
         with pytest.raises(Exception):
-            Area.areaofsquare(0)
-            Area.areaofsquare(-1)
+            Area.find(0)
+            Area.find(-1)
             
      
 
