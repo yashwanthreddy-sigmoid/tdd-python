@@ -1,6 +1,6 @@
-class area:
+class AreaFinder:
 
-    def areaofsquare(self,side):
+    def find(self,side):
 
         if side < 0:
             raise Exception("Bad Input")
